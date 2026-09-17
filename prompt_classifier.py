@@ -40,6 +40,7 @@ class Prediction:
     predicted: str | None          # None when the generation did not map to a label
     raw: str
     votes: dict[str, int] = field(default_factory=dict)
+    errors: list[str] = field(default_factory=list)
 
     @property
     def confidence(self) -> float:
@@ -135,12 +136,14 @@ class PromptClassifier:
         )
 
     def predict_one(self, text: str) -> Prediction:
-        raws, votes = [], Counter()
+        raws, errors, votes = [], [], Counter()
         for _ in range(self.n_votes):
             try:
                 raw = self._one_call(text)
             except Exception as exc:                      # noqa: BLE001
-                raws.append(f"<error: {exc}>")
+                message = str(exc)
+                errors.append(message)
+                raws.append(f"<error: {message}>")
                 continue
             raws.append(raw)
             mapped = self.schema.normalize(raw)
@@ -149,11 +152,18 @@ class PromptClassifier:
 
         predicted = votes.most_common(1)[0][0] if votes else None
         return Prediction(text=text, predicted=predicted,
-                          raw=" | ".join(raws), votes=dict(votes))
+                          raw=" | ".join(raws), votes=dict(votes),
+                          errors=errors)
 
     def predict(self, texts: list[str], progress: bool = True) -> list[Prediction]:
         with ThreadPoolExecutor(max_workers=self.max_workers) as pool:
             results = list(pool.map(self.predict_one, texts))
+        failures = sum(bool(result.errors) for result in results)
+        if failures:
+            raise RuntimeError(
+                f"{failures}/{len(results)} predictions failed at the API. "
+                "Check the API key, model name, network, and rate limits."
+            )
         if progress:
             unparsed = sum(1 for r in results if r.predicted is None)
             if unparsed:

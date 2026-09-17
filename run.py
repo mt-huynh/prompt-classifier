@@ -101,6 +101,11 @@ def main() -> int:
     if args.label_pool:
         from prompt_classifier import PromptClassifier
         pool = pd.read_csv(args.label_pool)
+        if "text" not in pool.columns:
+            raise ValueError(
+                f"Label-pool CSV must contain a 'text' column; found: "
+                f"{list(pool.columns)}"
+            )
         shots = sample_shots(df, schema, k=max(args.k), seed=0)
         clf = PromptClassifier(schema, shots, model=args.model,
                                n_votes=max(3, args.votes), max_workers=args.workers)

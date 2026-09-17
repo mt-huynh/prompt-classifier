@@ -115,6 +115,14 @@ def load_data(path: str | Path, schema: Schema,
             f"Labels in the CSV that are not in the schema: {sorted(unknown)}. "
             f"Schema has: {schema.names}"
         )
+
+    missing_labels = [name for name in schema.names
+                      if not (df["label"] == name).any()]
+    if missing_labels:
+        raise ValueError(
+            f"CSV has no examples for schema label(s): {missing_labels}. "
+            "Add at least one row for every label."
+        )
     return df.reset_index(drop=True)
 
 
