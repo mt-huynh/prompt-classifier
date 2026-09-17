@@ -1,0 +1,51 @@
+# Your label schema. This is the ONLY file you must edit to adapt the
+# pipeline to your own data.
+#
+# `definition` text is injected verbatim into the prompt header, exactly the
+# way Roy et al. inject the moral foundation definitions from their Table 1.
+# It is also what makes a zero-shot run meaningful, so write these carefully:
+# in few-shot regimes the definition is doing as much work as the examples.
+#
+# Guidance:
+#   - One or two sentences. Say what the class covers AND what tips a
+#     borderline case into it.
+#   - Mention the boundary with the class it is most often confused with.
+#   - Keep the same level of detail across classes; an unevenly specified
+#     schema shows up as an unevenly biased classifier.
+
+task_description: >
+  Classify the moral foundation expressed in a political tweet.
+
+# The field name used in the prompt line, e.g. "Moral foundation expressed in
+# the text:". Keep it short and natural.
+label_field: "Moral foundation expressed in the text"
+
+# The unit of text being classified, used in the prompt, e.g. "Tweet", "Review".
+text_field: "Tweet"
+
+labels:
+  - name: "CARE/HARM"
+    definition: >
+      Care for others, generosity, compassion, ability to feel the pain of
+      others, sensitivity to suffering, prohibiting actions that harm others.
+
+  - name: "FAIRNESS/CHEATING"
+    definition: >
+      Demand for fairness, rights, equality, justice, reciprocity, autonomy,
+      proportionality, and violations of these. Also prohibiting cheating.
+
+  - name: "LOYALTY/BETRAYAL"
+    definition: >
+      Group affiliation and solidarity, virtues of patriotism, self-sacrifice
+      for the group, prohibiting betrayal of one's group.
+
+  - name: "AUTHORITY/SUBVERSION"
+    definition: >
+      Fulfilling social roles, submitting to authority, respect for social
+      hierarchy and traditions, leadership, prohibiting rebellion against
+      authority.
+
+  - name: "PURITY/DEGRADATION"
+    definition: >
+      Associations with the sacred and holy, disgust, contamination, religious
+      notions which guide how to live, prohibiting violating the sacred.

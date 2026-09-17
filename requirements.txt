@@ -1,0 +1,11 @@
+# Core (both arms)
+pandas>=2.0
+pyyaml>=6.0
+scikit-learn>=1.3
+
+# Prompting arm
+anthropic>=0.40
+
+# RoBERTa arm only -- skip these if you are running --mode prompt
+torch>=2.0
+transformers>=4.40
