@@ -1,0 +1,31 @@
+task_description: >
+  Classify the moral foundation expressed in a short community statement.
+
+label_field: "Moral foundation expressed in the text"
+text_field: "Statement"
+
+labels:
+  - name: "CARE/HARM"
+    definition: >
+      Care for others, compassion, protection, and concern about suffering or
+      actions that physically or emotionally harm vulnerable people.
+
+  - name: "FAIRNESS/CHEATING"
+    definition: >
+      Equality, rights, justice, reciprocity, and concern about cheating or
+      giving someone an unfair advantage.
+
+  - name: "LOYALTY/BETRAYAL"
+    definition: >
+      Solidarity with a group, patriotism, teamwork, keeping faith with members
+      of the group, and concern about betrayal or abandonment.
+
+  - name: "AUTHORITY/SUBVERSION"
+    definition: >
+      Respect for legitimate roles, leaders, rules, institutions, traditions,
+      and concern about disobedience or undermining responsible authority.
+
+  - name: "PURITY/DEGRADATION"
+    definition: >
+      Cleanliness, sacredness, contamination, disgust, and concern about
+      degrading or defiling people, places, rituals, or valued objects.

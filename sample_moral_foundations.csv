@@ -1,0 +1,31 @@
+text,label
+"The shelter delivered warm meals and blankets to families displaced by the flood.",CARE/HARM
+"We should check on elderly neighbors during the heatwave and make sure they have water.",CARE/HARM
+"The clinic waived its fee so every injured worker could receive treatment.",CARE/HARM
+"Please stop sharing the photo; the child deserves privacy while recovering.",CARE/HARM
+"Volunteers organized a free ride service for people who cannot safely drive to appointments.",CARE/HARM
+"A city that leaves sick residents without medicine is failing its most vulnerable people.",CARE/HARM
+"Every applicant should be judged by the same written criteria, regardless of family connections.",FAIRNESS/CHEATING
+"The company returned the deposit it had charged by mistake.",FAIRNESS/CHEATING
+"Cutting the line is unfair to everyone who arrived before you.",FAIRNESS/CHEATING
+"Workers deserve equal pay when they perform the same job with the same responsibilities.",FAIRNESS/CHEATING
+"The referee should enforce the rules consistently for both teams.",FAIRNESS/CHEATING
+"Using a leaked answer key gives one student an unfair advantage.",FAIRNESS/CHEATING
+"The neighborhood raised its flag after the local team won the national championship.",LOYALTY/BETRAYAL
+"She stayed with her unit during the evacuation because no teammate should be left behind.",LOYALTY/BETRAYAL
+"A community remembers the volunteers who protected it during the storm.",LOYALTY/BETRAYAL
+"He broke the promise to defend the organization and secretly gave its plans to a rival.",LOYALTY/BETRAYAL
+"Citizens gathered to honor those who served their country.",LOYALTY/BETRAYAL
+"The captain asked the players to support one another instead of blaming a teammate.",LOYALTY/BETRAYAL
+"Students should follow the safety officer's instructions during the laboratory drill.",AUTHORITY/SUBVERSION
+"The new employee listened respectfully while the supervisor explained the procedure.",AUTHORITY/SUBVERSION
+"Ignoring the court order undermines the rule of law.",AUTHORITY/SUBVERSION
+"The ceremony followed the customs that the town has practiced for generations.",AUTHORITY/SUBVERSION
+"A responsible commander accepts accountability and gives clear direction in an emergency.",AUTHORITY/SUBVERSION
+"The child should not mock the teacher who is responsible for the classroom.",AUTHORITY/SUBVERSION
+"The community removed trash from the river because polluted water is disgusting and unsafe.",PURITY/DEGRADATION
+"Many people wash their hands before a sacred ceremony to keep the ritual pure.",PURITY/DEGRADATION
+"Dumping chemicals near the playground contaminates a place where children should be safe.",PURITY/DEGRADATION
+"The museum protects the ancient shrine from disrespectful treatment.",PURITY/DEGRADATION
+"Food that has spoiled should be discarded rather than served to guests.",PURITY/DEGRADATION
+"The festival asks visitors not to deface the memorial or treat it as a nuisance.",PURITY/DEGRADATION
