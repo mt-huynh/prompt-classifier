@@ -29,3 +29,53 @@ text,label
 "The museum protects the ancient shrine from disrespectful treatment.",PURITY/DEGRADATION
 "Food that has spoiled should be discarded rather than served to guests.",PURITY/DEGRADATION
 "The festival asks visitors not to deface the memorial or treat it as a nuisance.",PURITY/DEGRADATION
+"The nurse stayed late to comfort patients who were frightened and alone.",CARE/HARM
+"Neighbors delivered groceries to a family whose home was damaged by fire.",CARE/HARM
+"The rescue team carried the stranded hikers to a safe shelter.",CARE/HARM
+"Parents asked the council to make the crossing safer for children and older adults.",CARE/HARM
+"The charity paid for mobility equipment for residents who could not afford it.",CARE/HARM
+"A warning label can prevent people from being injured by the machine.",CARE/HARM
+"The teacher offered extra help to students who were struggling with the lesson.",CARE/HARM
+"The town opened an air-conditioned room for people vulnerable to the heat.",CARE/HARM
+"The hospital created a quiet space where grieving families could rest.",CARE/HARM
+"Rescuers called the missing person's family as soon as they found a safe route home.",CARE/HARM
+"The scholarship committee used the same income threshold for every applicant.",FAIRNESS/CHEATING
+"A contractor should not win a public bid by secretly paying an official.",FAIRNESS/CHEATING
+"The store apologized and refunded customers who were charged twice.",FAIRNESS/CHEATING
+"Each team received the same amount of time to present its proposal.",FAIRNESS/CHEATING
+"A fair election requires every eligible voter to have an equal opportunity to participate.",FAIRNESS/CHEATING
+"The judge rejected evidence that had been obtained through dishonest means.",FAIRNESS/CHEATING
+"The landlord must apply the lease rules equally to every tenant.",FAIRNESS/CHEATING
+"Students agreed that copying another person's work violates academic fairness.",FAIRNESS/CHEATING
+"The prize was divided according to the contribution each member made.",FAIRNESS/CHEATING
+"No player should gain an advantage by hiding a rule violation from the referee.",FAIRNESS/CHEATING
+"The alumni returned to campus to support the school that brought them together.",LOYALTY/BETRAYAL
+"The firefighters worked as one team to protect their station and neighborhood.",LOYALTY/BETRAYAL
+"She kept the club's confidence instead of sharing its private plans with a rival.",LOYALTY/BETRAYAL
+"Fans wore their team's colors to show pride in their community.",LOYALTY/BETRAYAL
+"The soldiers promised to bring every member of their patrol home.",LOYALTY/BETRAYAL
+"A friend who abandons the group for personal credit has betrayed its trust.",LOYALTY/BETRAYAL
+"The choir practiced together because every singer was responsible for the performance.",LOYALTY/BETRAYAL
+"Residents volunteered to rebuild the community center that served their neighborhood.",LOYALTY/BETRAYAL
+"The coach reminded the players that loyalty means supporting teammates after a loss.",LOYALTY/BETRAYAL
+"The union members stood together when one worker was unfairly dismissed.",LOYALTY/BETRAYAL
+"The archivist followed the museum director's instructions for preserving fragile records.",AUTHORITY/SUBVERSION
+"Drivers obeyed the traffic officer who was directing cars around the accident.",AUTHORITY/SUBVERSION
+"The council maintained the historic ceremony according to the town charter.",AUTHORITY/SUBVERSION
+"A judge's ruling should be respected until it is changed through the legal process.",AUTHORITY/SUBVERSION
+"The apprentice asked the master craftsman to demonstrate the traditional technique.",AUTHORITY/SUBVERSION
+"The emergency manager assigned roles so everyone knew who was responsible.",AUTHORITY/SUBVERSION
+"Breaking the agreed rules makes it harder for the organization to function.",AUTHORITY/SUBVERSION
+"The students waited for the principal's decision before restarting the event.",AUTHORITY/SUBVERSION
+"The officer reminded the group that leadership also requires accountability.",AUTHORITY/SUBVERSION
+"The village preserved its customary greeting as a sign of respect for elders.",AUTHORITY/SUBVERSION
+"The kitchen discarded moldy bread because serving it would contaminate the meal.",PURITY/DEGRADATION
+"Visitors removed their shoes before entering the sacred room.",PURITY/DEGRADATION
+"The cleanup crew drained the polluted pond and restored its clear water.",PURITY/DEGRADATION
+"The memorial was covered during construction to protect it from dust and damage.",PURITY/DEGRADATION
+"The community objected when vandals smeared paint across the historic monument.",PURITY/DEGRADATION
+"The chef separated raw meat from fresh produce to prevent contamination.",PURITY/DEGRADATION
+"The congregation treated the ceremonial objects with care and reverence.",PURITY/DEGRADATION
+"Residents complained that illegal dumping had degraded the once-pristine park.",PURITY/DEGRADATION
+"The laboratory sealed the sample so it could not contaminate other materials.",PURITY/DEGRADATION
+"The family cleaned the heirloom before placing it on the altar.",PURITY/DEGRADATION
